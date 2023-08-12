@@ -1,0 +1,16 @@
+@use "styles/index" as *;
+
+.sidebar-layout {
+    height: 100%;
+
+    &-children {
+        flex: 4;
+    }
+    &-container {
+        flex: 1;
+
+        @include tablet {
+            min-width: fit-content;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.displayJobList {
+    @apply justify-center w-full overflow-y-auto min-h-app bg-gray;
+}
+
+.displayJobList__container {
+    @apply p-4 m-auto;
+}
+
+.displayJobList__job__list {
+    @apply flex flex-col space-y-5;
+}

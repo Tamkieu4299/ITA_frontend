@@ -1,0 +1,112 @@
+{
+  "name": "ita-web-app",
+  "version": "0.0.0",
+  "repository": "https://github.com/deltacognition/ita-web-app.git",
+  "author": "tamkieudc <tam.kieu@deltacognition.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development runtime-env-cra --config-name=./public/runtime-env.js && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prepare": "husky install",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json} --max-warnings=0",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json} --max-warnings=0",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.4",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.34",
+    "@types/react-dom": "^18.0.11",
+    "axios": "^1.4.0",
+    "moment": "^2.29.4",
+    "query-string": "^8.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.44.3",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "6",
+    "react-scripts": "5.0.1",
+    "redux": "4.1.2",
+    "redux-action": "^1.2.2",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.2",
+    "runtime-env-cra": "^0.2.4",
+    "sass": "^1.63.4",
+    "typescript": "^5.0.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "7.0.9",
+    "@storybook/addon-interactions": "7.0.9",
+    "@storybook/addon-links": "7.0.9",
+    "@storybook/blocks": "7.0.9",
+    "@storybook/preset-create-react-app": "7.0.9",
+    "@storybook/react": "7.0.9",
+    "@storybook/react-webpack5": "7.0.9",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "@types/uuid": "^9.0.1",
+    "@types/video-react": "^0.15.1",
+    "autoprefixer": "^10.4.14",
+    "babel-plugin-named-exports-order": "0.0.2",
+    "cross-env": "^7.0.3",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "prop-types": "15.8.1",
+    "react-audio-player": "^0.17.0",
+    "storybook": "7.0.9",
+    "tailwindcss": "^3.1.7",
+    "video-react": "^0.16.0",
+    "webpack": "5.74.0"
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      },
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      },
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  }
+}

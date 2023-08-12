@@ -1,0 +1,78 @@
+.audioUploader {
+    @apply flex
+    flex-col
+    justify-center;
+}
+
+.audioUploader__container__left {
+    @apply flex;
+}
+` .audioUploader__left__input {
+    @apply px-3 py-2 mr-2 placeholder-text-text text-text-text relative bg-white rounded text-sm border border-text-text outline-none focus:outline-none focus:ring w-full;
+}
+
+.audioUploader__left__box {
+    @apply font-sans text-text-text w-full;
+}
+
+.audioUploader__box__form {
+    @apply mx-auto flex flex-col items-center justify-center w-full h-auto bg-white rounded-lg;
+}
+
+.audioUploader__form__title {
+    @apply mt-5 mb-5 text-center;
+}
+
+.audioUploader__title__head {
+    @apply text-2xl font-semibold mb-2;
+}
+
+.audioUploader__title__desc {
+    @apply pt-3 px-24 text-text-second;
+}
+
+.audioUploader__container__right {
+    @apply w-full flex
+    flex-col
+    justify-center;
+}
+
+.audioUploader__right__file {
+    @apply h-auto flex m-auto rounded-lg  w-full;
+}
+
+.audioUploader__right__file audio {
+    @apply m-auto;
+}
+
+.audioUploader__menu {
+    @apply flex justify-evenly;
+}
+
+.audioUploader__menu__item {
+    @apply rounded-t hover:bg-primary  py-2 px-4 transition duration-500 ease-in-out transform hover:-translate-y-1;
+}
+
+.file__object {
+    @apply h-auto w-full;
+}
+
+.file__object--none {
+    @apply w-full;
+}
+
+.audioUploader__right__controllers {
+    @apply py-2 text-center;
+}
+
+.audioUploader__right__filename {
+    @apply px-3 py-2 mr-2 placeholder-text-text rounded outline-none focus:outline-none;
+}
+
+.audioUploader__right__change {
+    @apply bg-border-box py-3 px-4 rounded inline-flex items-center !important;
+}
+
+.audioUploader__controllers__button {
+    @apply m-auto border border-text-text rounded p-2 text-sm w-1/4 transition duration-500 ease-in-out transform hover:scale-105;
+}

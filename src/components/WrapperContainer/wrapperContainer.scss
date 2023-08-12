@@ -1,0 +1,35 @@
+@use "styles/index" as *;
+
+.wrapper-container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 calc(1.5rem * 0.5 + 70px);
+
+    &.body-container {
+        padding-top: 40px;
+        padding-bottom: 120px;
+    }
+
+    @include largest {
+        max-width: 1320px;
+    }
+
+    @include desktop {
+        max-width: 1140px;
+        padding: 0;
+    }
+
+    @include tablet {
+        max-width: 960px;
+    }
+
+    @include mobile {
+        max-width: 720px;
+        padding: 0 12px;
+    }
+
+    @include for-mobile-down {
+        max-width: 540px;
+        padding: 0 4px;
+    }
+}

@@ -1,0 +1,172 @@
+@use "styles/index" as *;
+
+.auth {
+    font-family: "Barlow", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+
+    &-background {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: radial-gradient(
+                50% 50% at 0% 110%,
+                $secondary-450 -80%,
+                rgba(201, 113, 255, 0) 100%
+            ),
+            radial-gradient(50% 50% at 120% 10%, $info-550 -80%, rgba(92, 121, 252, 0) 100%);
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        &__login,
+        &__signup {
+            background-color: white;
+            box-shadow: $shadow-xl;
+            width: 400px;
+            z-index: 2;
+            padding: 50px 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 200px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            h1 {
+                color: $info-700;
+                margin: 18px 0 18px 0;
+                font-size: 25px;
+                font-family: "Poppins", sans-serif;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+            }
+
+            .login-nav {
+                color: $info-600;
+
+                & > div {
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .login-options {
+                &__text {
+                    position: relative;
+
+                    span {
+                        font-size: 14px;
+                        color: $neutral-500;
+                        letter-spacing: 1px;
+                        z-index: 0;
+                        background-color: $white;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background: $neutral-500;
+                        z-index: -1;
+                    }
+                }
+
+                &__list {
+                    .option-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 5px;
+                        width: 48%;
+                        border-radius: 4px;
+                        padding: 10px 15px;
+                        cursor: pointer;
+
+                        svg {
+                            width: 24px;
+                        }
+
+                        &:hover {
+                            span {
+                                color: $white;
+                            }
+                        }
+
+                        &__google {
+                            border: 1px solid $color4-550;
+
+                            span {
+                                color: $color4-550;
+                            }
+
+                            svg {
+                                fill: $color4-550;
+                            }
+
+                            &:hover {
+                                background-color: $color4-550;
+
+                                svg {
+                                    fill: $white;
+                                }
+                            }
+                        }
+
+                        &__facebook {
+                            border: 1px solid $info-600;
+
+                            span {
+                                color: $info-600;
+                            }
+
+                            svg {
+                                fill: $info-600;
+                            }
+
+                            &:hover {
+                                background-color: $info-600;
+
+                                svg {
+                                    fill: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__signup {
+            .signup-nav {
+                span {
+                    color: $info-500;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

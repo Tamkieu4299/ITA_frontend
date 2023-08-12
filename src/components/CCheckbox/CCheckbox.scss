@@ -1,0 +1,12 @@
+@use "styles/index" as *;
+
+.MuiCheckbox-root {
+    padding: 0;
+
+    &.Mui-checked,
+    &.MuiCheckbox-indeterminate {
+        &.MuiCheckbox-colorPrimary {
+            color: $info-550 !important;
+        }
+    }
+}

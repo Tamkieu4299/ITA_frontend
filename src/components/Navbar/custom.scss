@@ -1,0 +1,59 @@
+@use "styles/index" as *;
+
+.header-account__wrapper {
+    > div {
+        height: 40px;
+        max-width: 120px;
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 12px 0 4px;
+        gap: 10px;
+
+        .MuiAvatar-root {
+            width: 34px;
+            height: 34px;
+            margin: 0;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        .MuiChip-label {
+            font-size: 16px;
+            padding: 0;
+        }
+    }
+}
+
+.header-account__dropdown {
+    top: 5px;
+
+    .MuiPaper-root {
+        min-width: 170px;
+
+        .account-dropdown__item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px;
+            border-bottom: 0.3px solid $neutral-200;
+            color: $neutral-600;
+            font-weight: 500;
+            font-size: 15px;
+            text-transform: capitalize;
+            cursor: pointer;
+
+            &:last-child {
+                border: 0;
+            }
+
+            &:hover {
+                background-color: $neutral-200;
+            }
+        }
+    }
+}

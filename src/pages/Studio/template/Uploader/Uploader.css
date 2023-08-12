@@ -1,0 +1,81 @@
+.uploader {
+    @apply flex
+    flex-col
+    justify-center
+    space-x-0
+    rounded-lg overflow-hidden;
+}
+
+.uploader__container__left {
+    @apply flex 
+    justify-center
+    pb-4;
+}
+
+.uploader__left__input {
+    @apply px-3 py-2 mr-2 placeholder-text-text text-text-text relative bg-white rounded text-sm border border-text-text outline-none focus:outline-none focus:ring w-full;
+}
+
+.uploader__left__box {
+    @apply font-sans text-text-gray;
+}
+
+.uploader__box__form {
+    @apply mx-auto flex flex-col items-center justify-center w-full h-auto bg-white rounded-lg;
+}
+
+.uploader__form__title {
+    @apply mt-5 mb-5 text-center;
+}
+
+.uploader__title__head {
+    @apply text-2xl font-semibold mb-2;
+}
+
+.uploader__title__desc {
+    @apply p-3 text-text-second;
+}
+
+.uploader__container__right {
+    @apply overflow-hidden m-auto w-auto;
+}
+
+.uploader__right__file {
+    @apply h-auto w-full m-auto  rounded-lg;
+}
+
+.uploader__right__video {
+    @apply bg-black w-full h-full;
+}
+
+.uploader__menu {
+    @apply flex justify-evenly;
+}
+
+.uploader__menu__item {
+    @apply rounded-t hover:bg-primary py-2 px-4 transition duration-500 ease-in-out transform hover:-translate-y-1;
+}
+
+.file__object {
+    @apply h-auto w-auto p-4;
+}
+
+.file__object--none {
+    @apply max-h-full w-full border border-text-text;
+}
+
+.uploader__right__controllers {
+    @apply flex py-2 flex-row-reverse;
+}
+
+.uploader__right__filename {
+    @apply px-3 py-2 placeholder-text-text rounded outline-none focus:outline-none;
+}
+
+.uploader__right__change {
+    @apply bg-secondary py-3 px-4 rounded inline-flex items-center !important;
+}
+
+.uploader__controllers__button {
+    @apply mx-auto w-1/2 border border-text-text rounded p-2 text-sm transition duration-500 ease-in-out transform hover:scale-105;
+}

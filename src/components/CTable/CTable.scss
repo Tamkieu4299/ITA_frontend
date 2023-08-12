@@ -1,0 +1,44 @@
+@use "styles/index" as *;
+
+.MuiTableCell-root {
+    padding: 12px;
+
+    &.MuiTableCell-paddingCheckbox {
+        padding: 0 0 0 4px;
+    }
+
+    > span {
+        white-space: nowrap;
+    }
+
+    .cell-variant {
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        display: inline-block;
+        text-align: center;
+        text-transform: capitalize;
+
+        &__unconfirmed {
+            background-color: $neutral-500;
+        }
+
+        &__cancel {
+            background-color: $danger-500;
+        }
+
+        &__pending {
+            background-color: $warning-500;
+        }
+
+        &__completed {
+            background-color: $success-500;
+        }
+    }
+
+    svg {
+        cursor: pointer;
+    }
+}

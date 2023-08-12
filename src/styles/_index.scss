@@ -1,0 +1,79 @@
+@use "./variables" as *;
+
+@forward "./mixins";
+@forward "./variables";
+@forward "./global";
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif !important;
+}
+
+p,
+div,
+span,
+small,
+label {
+    font-family: "Barlow", sans-serif !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+
+    /* Track */
+    &-track {
+        background: $neutral-300;
+    }
+
+    /* Handle */
+    &-thumb {
+        background: $neutral-500;
+        border-radius: 20px;
+
+        /* Handle on hover */
+        &:hover {
+            background: $neutral-600;
+        }
+    }
+}
+
+input {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    &[type="number"] {
+        -moz-appearance: textfield;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.ellipsis {
+    position: relative;
+
+    &::before {
+        content: "&nbsp;";
+        visibility: hidden;
+    }
+
+    span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

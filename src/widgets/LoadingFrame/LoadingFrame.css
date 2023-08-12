@@ -1,0 +1,15 @@
+.loadingFrame {
+    @apply relative flex flex-col w-full h-full z-50 overflow-hidden bg-text-text opacity-60  items-center justify-center;
+}
+
+.loadingFrame__dots {
+    @apply flex;
+}
+
+.loadingFrame__dot {
+    @apply w-8 h-8 mb-4 mx-1 bg-primary rounded-full;
+}
+
+.loadingFrame__text {
+    @apply text-center text-primary text-lg font-bold;
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Please read and confirm",
+        "content": [
+            {
+                "heading": "Terms & Privacy",
+                "paragraph": ""
+            },
+            {
+                "heading": "",
+                "paragraph": "1. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "heading": "",
+                "paragraph": "2. Duis et urna at libero ultrices placerat"
+            },
+            {
+                "heading": "",
+                "paragraph": "3. Nulla in nisl velit. Vestibulum et sagittis enim."
+            },
+            {
+                "heading": "The session will be recorded for the training purpose",
+                "paragraph": ""
+            }
+        ]
+    }
+]

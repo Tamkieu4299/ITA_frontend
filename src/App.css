@@ -1,0 +1,7 @@
+.app__header {
+    @apply justify-between;
+}
+
+.app__main {
+    @apply min-h-app;
+}

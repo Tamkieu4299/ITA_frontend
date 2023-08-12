@@ -1,0 +1,31 @@
+.interviewSession {
+    @apply w-full mt-4 bg-text-text rounded shadow border border-black;
+}
+
+.interviewSession__container {
+    @apply flex m-auto relative space-x-4;
+}
+
+.interviewSession__left {
+    @apply relative flex-1 flex w-full aspect-[4/3] overflow-hidden bg-text-text;
+}
+
+.interviewSession__right {
+    @apply relative flex-1 flex flex-col w-full h-auto aspect-[4/3] items-center;
+}
+
+.interviewSession__left__video {
+    @apply absolute w-full bg-text-text;
+}
+
+.interviewSession__right__video {
+    @apply relative w-full;
+}
+
+.interviewSession__controllers {
+    @apply flex space-x-5 absolute top-3/4;
+}
+
+.interviewSession__controllers__button {
+    @apply mx-auto w-1/2 rounded bg-primary p-3 text-m uppercase text-third border-third hover:bg-third hover:text-white border font-semibold  py-1  duration-100 cursor-pointer;
+}

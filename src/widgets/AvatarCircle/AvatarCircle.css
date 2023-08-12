@@ -1,0 +1,27 @@
+.avatarCircle {
+    @apply flex space-x-4 items-center cursor-pointer border border-border-box p-3 rounded my-auto m-2;
+}
+
+.avatarCircle__avatar {
+    @apply rounded-full overflow-hidden w-16 h-16 bg-gradient-to-r from-gray-500 to-third p-1;
+}
+
+.avatarCircle__avatar__image-box {
+    @apply rounded-full overflow-hidden h-14 ring-[2px] ring-white;
+}
+
+.avatarCircle__avatar__image-img {
+    @apply w-full;
+}
+
+.avatarCircle__content {
+    @apply flex flex-col;
+}
+
+.avatarCircle__content-text {
+    @apply text-s text-text-text;
+}
+
+.avatarCircle__content-text--second {
+    @apply text-s font-bold text-text-text;
+}

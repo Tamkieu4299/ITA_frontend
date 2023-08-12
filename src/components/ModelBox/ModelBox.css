@@ -1,0 +1,40 @@
+.modelbox {
+    @apply relative 
+    w-full
+    h-auto 
+    my-6 
+    mx-auto;
+}
+
+.modelbox__container {
+    @apply relative
+    p-6 
+    w-full
+    flex-auto;
+}
+
+.modelbox__title {
+    @apply text-third
+    mb-4
+    font-bold
+    text-2xl 
+    leading-relaxed;
+}
+
+.modelbox__heading {
+    @apply text-text-text
+    font-semibold
+    text-lg 
+    leading-relaxed;
+}
+
+.modelbox__paragraph {
+    @apply mb-4 
+    text-text-second
+    text-lg 
+    leading-relaxed;
+}
+
+.modelbox__input {
+    @apply border border-text-text w-full p-10;
+}

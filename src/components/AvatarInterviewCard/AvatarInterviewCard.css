@@ -1,0 +1,43 @@
+.avatarInterviewCard {
+    @apply w-full flex flex-col  mt-4 cursor-pointer;
+}
+
+.avatarInterviewCard__container {
+    @apply bg-white relative mx-auto flex h-auto w-1/2 max-w-full flex-col items-center bg-cover bg-clip-border p-4 dark:text-white dark:shadow-none;
+}
+
+.avatarInterviewCard__top {
+    @apply flex rounded bg-cover overflow-hidden w-2/3 h-2/3;
+}
+
+.avatarInterviewCard__top__image-box {
+    @apply h-auto w-auto items-center justify-center rounded border-[4px] border-white bg-text-text;
+}
+
+.avatarInterviewCard__top__image-item {
+    @apply h-auto w-auto rounded overflow-hidden;
+}
+
+.avatarInterviewCard__info {
+    @apply mt-4 flex flex-col items-center;
+}
+
+.avatarInterviewCard__info__text-title {
+    @apply text-third text-xl font-bold;
+}
+
+.avatarInterviewCard__info__text-title--dark {
+    @apply text-text-text text-xl font-bold text-center;
+}
+
+.avatarInterviewCard__voice {
+    @apply mt-6 mb-3 flex flex-col items-center space-y-6;
+}
+
+.avatarInterviewCard__voice__desc {
+    @apply text-text-text;
+}
+
+.avatarInterviewCard__controllers__button {
+    @apply mx-auto mt-4 border text-text-text border-text-text rounded p-2 text-sm w-1/4;
+}

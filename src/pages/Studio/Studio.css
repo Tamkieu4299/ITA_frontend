@@ -1,0 +1,46 @@
+.studio {
+    @apply space-x-1 bg-gray;
+}
+
+.studio__container__left {
+    @apply rounded-lg;
+}
+
+.studio__container__right {
+    @apply flex
+    flex-col
+    border 
+    rounded-lg
+    border-secondary
+    p-5;
+}
+
+.studio__right__context {
+    @apply w-full
+    max-w-full;
+}
+
+.studio__right__tabs {
+    @apply bg-white w-auto p-3 rounded-lg;
+}
+
+.studio__tabs__button {
+    @apply flex justify-center col-span-1 space-x-3 items-center;
+}
+
+.studio__right__border {
+    @apply border-b-4 py-2 mb-5 transition-colors duration-300;
+}
+
+.studio__right__button {
+    @apply mt-20 flex justify-center;
+}
+
+.studio__next__button {
+    @apply bg-third w-1/4 rounded-lg  hover:shadow-lg ease-linear 
+    hover:animate-bounce
+    transition-all 
+    text-white
+    font-bold
+    mb-2 py-3 !important;
+}

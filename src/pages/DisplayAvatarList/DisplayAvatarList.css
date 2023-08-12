@@ -1,0 +1,116 @@
+.displayAvatarList {
+    @apply justify-center bg-gray;
+}
+
+.displayAvatarList__container {
+    @apply flex p-4 space-x-4;
+}
+
+.displayAvatarList__avatar__list {
+    @apply mt-4 h-auto w-1/2 max-h-screen grid overflow-y-auto grid-cols-2 p-2 border border-border-box rounded shadow bg-white content-baseline;
+}
+
+.displayAvatarList__avatar__list::-webkit-scrollbar {
+    @apply bg-transparent rounded;
+}
+
+.displayAvatarList__avatar__list::-webkit-scrollbar-track {
+    @apply rounded bg-button-bgGray;
+}
+
+.displayAvatarList__avatar__list::-webkit-scrollbar-thumb {
+    @apply bg-button-gray rounded;
+}
+
+.displayAvatarList__avatar__cards {
+    @apply w-full flex mt-4 max-h-full border border-border-box rounded shadow bg-white;
+}
+
+.displayAvatarList__avatar__card {
+    @apply w-full m-auto max-h-fit;
+}
+
+.displayAvatarList__modelbox {
+    @apply justify-center 
+    items-center 
+    flex 
+    overflow-x-hidden 
+    overflow-y-auto 
+    fixed inset-0 
+    outline-none 
+    focus:outline-none 
+    z-50;
+}
+
+.displayAvatarList__modelbox__container {
+    @apply relative 
+    w-auto 
+    my-6 
+    mx-auto 
+    max-w-3xl;
+}
+
+.displayAvatarList__modelbox__items {
+    @apply border-0 
+    rounded-lg 
+    shadow-lg 
+    relative 
+    flex 
+    flex-col 
+    w-full 
+    outline-none 
+    focus:outline-none bg-white;
+}
+
+.displayAvatarList__modelbox__buttons {
+    @apply flex 
+    items-center 
+    justify-end 
+    p-6 
+    border-t 
+    border-solid 
+    border-border-box
+    rounded-b;
+}
+
+.displayAvatarList__modelbox__button-accept {
+    @apply text-text-text
+    bg-transparent 
+    font-bold 
+    uppercase 
+    px-6 
+    py-2 
+    text-sm 
+    outline-none 
+    focus:outline-none 
+    mb-1 
+    ease-linear 
+    transition-all 
+    duration-150 
+    z-40;
+}
+
+.displayAvatarList__modelbox__button {
+    @apply text-text-red
+    bg-transparent 
+    font-bold 
+    uppercase 
+    px-6 
+    py-2 
+    text-sm 
+    outline-none 
+    focus:outline-none 
+    mb-1 
+    ease-linear 
+    transition-all 
+    duration-150 
+    z-40;
+}
+
+.displayAvatarList__modelbox__fade {
+    @apply opacity-25 
+    fixed 
+    inset-0 
+    z-40 
+    bg-black;
+}

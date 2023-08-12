@@ -1,0 +1,62 @@
+.navbar {
+    @apply relative
+    rounded-lg
+    border;
+}
+
+.navbar__container {
+    @apply mx-auto;
+}
+
+.navbar__items {
+    @apply items-center 
+    py-6 
+    md:justify-start 
+    md:space-x-10
+    grid 
+    grid-cols-4;
+}
+
+.navbar__items__list {
+    @apply col-span-2;
+}
+
+.navbar__items__logo {
+    @apply flex;
+}
+
+.navbar__logo__title {
+    @apply text-text-text
+    rounded-md 
+    items-center 
+    font-normal
+    px-3 
+    py-3;
+}
+
+.items-list__item {
+    @apply text-text-text
+    rounded-md 
+    items-center 
+    font-normal
+    px-3 
+    py-2;
+}
+
+.items-list__item--current {
+    @apply text-text-text
+    rounded-md 
+    items-center 
+    px-3 
+    py-2
+    font-bold;
+}
+
+.navbar__items__button {
+    @apply flex
+    flex-row-reverse;
+}
+
+.text-logout {
+    @apply text-darkBlue;
+}

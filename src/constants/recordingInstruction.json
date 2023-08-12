@@ -1,0 +1,16 @@
+[
+    {
+        "content": "Please keep your face in the center of the frame during the recording",
+        "duration": 3000
+    },
+    { "content": "Please move your head up and down", "duration": 3000 },
+    {
+        "content": "Please keep your head moving natually and read these spoken text. After that you can turn off the record",
+        "duration": 3000
+    },
+    {
+        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt nesciunt commodi iusto cumque sequi. Eligendi quisquam nisi assumenda, deserunt itaque sequi totam minus dicta libero, tempora eum dolore est cumque",
+        "duration": 10000
+    },
+    { "content": "Please turn off the record", "duration": 5000 }
+]

@@ -1,0 +1,226 @@
+@use "styles/index" as *;
+
+.interview-detail {
+    display: flex;
+    gap: 16px;
+
+    .interviewee-profile {
+        flex: 1;
+
+        .profile-card {
+            background-color: white;
+            box-shadow: $shadow-m;
+            border-radius: 4px;
+            position: sticky;
+            top: 16px;
+
+            .profile-upper {
+                min-height: 120px;
+                background-color: $info-800;
+                width: 100%;
+                position: relative;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+
+                &__avatar {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 40%);
+                    width: 100px;
+                    height: 100px;
+                    padding: 8px;
+                    background-color: white;
+                    border-radius: 50%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .profile-lower {
+                padding: 50px 16px 16px 16px;
+
+                .profile-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    &__title {
+                        flex: 2;
+                        font-weight: 600;
+                        color: $info-800;
+                    }
+
+                    &__value {
+                        flex: 3;
+
+                        .cv-value {
+                            &:hover {
+                                cursor: pointer;
+                                border-bottom: 2px solid $neutral-500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .interviewee-result {
+        flex: 3;
+        background-color: white;
+        border-radius: 4px;
+        padding: 16px;
+
+        h1 {
+            letter-spacing: 1px;
+            color: $info-800;
+        }
+
+        .jd-text {
+            font-size: 15px;
+            color: $neutral-600;
+            font-weight: 500;
+            line-height: 1.7;
+        }
+
+        .interviewee-answers {
+            .MuiAccordion-root {
+                &::before {
+                    content: none;
+                }
+
+                .Mui-focusVisible {
+                    background-color: transparent;
+                }
+
+                .MuiAccordionSummary-content {
+                    align-items: center;
+                    margin: 16px 0;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: $neutral-800;
+
+                    span {
+                        min-width: 20px;
+                    }
+
+                    .section-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h2 {
+                            font-size: 23px;
+                            font-weight: 500;
+                            color: $neutral-500;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .MuiAccordionDetails-root {
+                    padding: 0 20px 16px 36px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+
+                    .empty-answer {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        align-items: center;
+                        justify-content: center;
+
+                        p {
+                            font-size: 24px;
+                            color: $neutral-900;
+                            font-weight: 500;
+                        }
+
+                        img {
+                            width: 200px;
+                            height: 200px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    section {
+                        h2 {
+                            font-size: 24px;
+                            color: $info-800;
+                            font-weight: 500;
+                            border-bottom: 2px solid $info-700;
+                            margin-bottom: 16px;
+                        }
+
+                        .answer-detail {
+                            p {
+                                margin-bottom: 8px;
+                                font-size: 15px;
+                            }
+                        }
+
+                        .analysis-scores {
+                            display: flex;
+                            justify-content: space-around;
+
+                            .answer-score {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 4px;
+
+                                &__title {
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    color: $neutral-800;
+                                }
+
+                                &__circle {
+                                    width: 100px;
+                                    height: 100px;
+                                    border-radius: 50%;
+                                    background-color: $danger-700;
+                                    color: white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    span {
+                                        font-weight: 600;
+                                        font-size: 28px;
+                                        letter-spacing: 1px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .analysis-review {
+                            .review-title {
+                                min-width: 200px;
+                                text-transform: capitalize;
+                                color: $info-800;
+                                font-weight: 600;
+                            }
+
+                            .review-value {
+                                text-transform: capitalize;
+                                color: $neutral-800;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

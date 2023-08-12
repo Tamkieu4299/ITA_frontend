@@ -1,0 +1,83 @@
+.recorder {
+    @apply min-h-screen mt-4;
+}
+
+.recorder__container {
+    @apply h-auto w-5/6 max-h-full m-auto;
+}
+
+.recorder__right {
+    @apply rounded-lg overflow-hidden h-auto w-auto border border-text-text  relative aspect-[4/3];
+}
+
+.recorder__right__video {
+    @apply h-auto w-full z-20 absolute;
+}
+
+.recorder__form__title {
+    @apply mt-5 mb-5 text-center;
+}
+
+.recorder__title__head {
+    @apply text-2xl font-semibold mb-2;
+}
+
+.recorder__title__desc {
+    @apply p-3 text-text-second;
+}
+
+.recorder__left {
+    @apply flex flex-col space-y-10 m-4;
+}
+
+.recorder__desc {
+    @apply absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 z-30 w-3/4;
+}
+
+.recorder__desc__paragraph {
+    @apply bg-primary text-text-text text-m px-4 py-2 border border-text-text rounded;
+}
+
+.recorder__controllers {
+    @apply flex space-x-2 my-4 w-1/2 mx-auto;
+}
+
+.recorder__controllers--absolute {
+    @apply flex space-x-1 absolute top-3/4 text-center left-1/2 transform -translate-x-1/2 z-50 w-3/4;
+}
+
+.recorder__controllers__button {
+    @apply shadow rounded p-2 text-sm w-full hover:bg-button-gray bg-primary border border-text-text;
+}
+
+.recorder__controllers__button--normal {
+    @apply hover:bg-button-gray text-text-gray rounded font-bold justify-center p-2 items-center w-full bg-primary border border-text-text;
+}
+
+.recorder__controllers__button__record {
+    @apply flex w-1/2;
+}
+
+.recorder__controllers__button--recording {
+    @apply hover:bg-button-gray text-text-gray rounded font-bold w-full bg-primary border border-text-text flex justify-center p-2 items-center;
+}
+
+.recording__button--recording__dot {
+    @apply relative flex h-5 w-5;
+}
+
+.recording__button--recording__dot__base {
+    @apply absolute animate-ping  inline-flex h-full w-full rounded-full bg-border-redButton opacity-75;
+}
+
+.recording__button--recording__dot__flash {
+    @apply absolute inline-flex rounded-full h-5 w-5 bg-border-redButton;
+}
+
+.video__object {
+    @apply h-auto w-full;
+}
+
+.video__object--none {
+    @apply h-auto w-full max-h-full;
+}

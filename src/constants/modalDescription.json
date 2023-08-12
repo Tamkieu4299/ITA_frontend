@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Create your generated avatar",
+        "content": [
+            {
+                "heading": "",
+                "paragraph": "For generating the avatar, our model needs your video or your image+audio. For video, you can either record or upload. For image+audio, you have to upload them."
+            }
+        ]
+    },
+    {
+        "title": "Preview and testing your generated avatar",
+        "content": [
+            {
+                "heading": "",
+                "paragraph": "The preview session includes all generated avatar from the Create Video session. You can test the avatar with your custom text"
+            }
+        ]
+    },
+    {
+        "title": "Finalize your generated avatar",
+        "content": [
+            {
+                "heading": "",
+                "paragraph": "The final session includes approved generated avatar from the preview session."
+            }
+        ]
+    }
+]

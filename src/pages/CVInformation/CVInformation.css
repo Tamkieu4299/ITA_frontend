@@ -1,0 +1,79 @@
+.cvinformation {
+    @apply bg-gray;
+}
+
+.cvinformation__header__title {
+    @apply text-4xl font-bold text-text-title;
+}
+
+.cvinformation__body {
+    @apply w-full px-6 py-4 mt-6 bg-white border border-border-box shadow-md max-w-3xl rounded-lg;
+}
+
+.cvinformation__body__title--top {
+    @apply text-lg font-bold text-third;
+}
+
+.cvinformation__body__title {
+    @apply text-lg font-bold text-third mt-10;
+}
+
+.cvinformation__body__row {
+    @apply flex space-x-3;
+}
+
+.cvinformation__body__label {
+    @apply block text-sm font-medium text-text-text;
+}
+
+.cvinformation__body__input-container {
+    @apply flex flex-col items-start;
+}
+
+.cvinformation__body__input-box {
+    @apply block w-full border-border-input rounded shadow p-2 border outline-none;
+}
+
+.cvinformation__body__upload-box {
+    @apply p-2;
+}
+
+.cvinformation__body__upload-container {
+    @apply flex m-auto;
+}
+
+.cvinformation__body__field-block--top {
+    @apply mt-0;
+}
+
+.cvinformation__body__field-block {
+    @apply mt-4 flex-1;
+}
+
+.cvinformation__body__button-add {
+    @apply w-full mt-4 px-1 py-1 tracking-wide text-text-text text-lg transition-colors duration-200 transform bg-button-gray hover:bg-button-grayHover rounded-md outline-none;
+}
+
+.cvinformation__bottom {
+    @apply flex items-center mt-10;
+}
+
+.cvinformation__bottom__button-submit {
+    @apply w-full m-auto px-3 py-3 tracking-wide text-white text-lg transition-colors duration-200 transform bg-third rounded-md focus:outline-none;
+}
+
+.cvinformation__body__add-item {
+    @apply border-b-2 pb-5 mt-4 border-border-input;
+}
+
+.cvinformation__body__input-box--added {
+    @apply block w-full pt-1;
+}
+
+.cvinformation__add-item__button {
+    @apply border-2 border-border-redButton rounded px-2 py-1 text-text-red cursor-pointer hover:bg-border-redButton hover:text-text-redHover text-sm;
+}
+
+.cvinformation__add-box {
+    @apply mt-4;
+}

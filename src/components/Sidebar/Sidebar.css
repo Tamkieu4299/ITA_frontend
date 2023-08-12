@@ -1,0 +1,116 @@
+.sidebar {
+    @apply flex 
+    flex-col 
+    p-3 
+    bg-white 
+    w-60
+    border-secondary border rounded-lg shadow;
+}
+
+.sidebar__list {
+    @apply pt-2 
+    pb-4 
+    space-y-4
+    text-sm;
+}
+
+.sidebar__list__item {
+    @apply rounded-lg 
+    p-3 
+    place-content-between
+    hover:bg-primary
+    hover:shadow-lg 
+    ease-linear 
+    transition-all 
+    duration-150
+    flex;
+}
+
+.list__desc__button {
+    @apply text-text-text
+    font-bold 
+    text-sm 
+    px-6 
+    py-3 
+    rounded
+    outline-none 
+    focus:outline-none;
+}
+
+.list__item__link {
+    @apply flex 
+    items-center 
+    p-2 
+    space-x-3 
+    rounded-md
+    group-hover:opacity-50;
+}
+
+.sidebar__modelbox {
+    @apply justify-center 
+    items-center 
+    flex 
+    overflow-x-hidden 
+    overflow-y-auto 
+    fixed inset-0 
+    outline-none 
+    focus:outline-none 
+    z-50;
+}
+
+.sidebar__modelbox__container {
+    @apply relative 
+    w-auto 
+    my-6 
+    mx-auto 
+    max-w-3xl;
+}
+
+.sidebar__modelbox__items {
+    @apply border-0 
+    rounded-lg 
+    shadow-lg 
+    relative 
+    flex 
+    flex-col 
+    w-full 
+    bg-white 
+    outline-none 
+    focus:outline-none;
+}
+
+.sidebar__modelbox__buttons {
+    @apply flex 
+    items-center 
+    justify-end 
+    p-6 
+    border-t 
+    border-solid 
+    border-border-box
+    rounded-b;
+}
+
+.sidebar__modelbox__button {
+    @apply text-text-red
+    bg-transparent 
+    font-bold 
+    uppercase 
+    px-6 
+    py-2 
+    text-sm 
+    outline-none 
+    focus:outline-none 
+    mb-1 
+    ease-linear 
+    transition-all 
+    duration-150 
+    z-40;
+}
+
+.sidebar__modelbox__fade {
+    @apply opacity-25 
+    fixed 
+    inset-0 
+    z-40 
+    bg-black;
+}

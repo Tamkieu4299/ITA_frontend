@@ -1,0 +1,7 @@
+.loader-container {
+    @apply w-full h-screen left-0 top-0 flex flex-col justify-center items-center fixed z-large bg-loading;
+}
+
+.loader-container .loader-gif {
+    @apply flex justify-center items-center;
+}

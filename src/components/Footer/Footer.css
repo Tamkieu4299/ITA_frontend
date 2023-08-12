@@ -1,0 +1,13 @@
+.footer {
+    @apply rounded-lg
+    border;
+}
+
+.footer-items {
+    @apply p-4 
+    text-center;
+}
+
+.footer-items__item {
+    @apply text-text-second;
+}

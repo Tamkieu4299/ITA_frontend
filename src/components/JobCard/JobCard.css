@@ -1,0 +1,43 @@
+.jobCard {
+    @apply w-2/3 border border-border-box p-6 shadow-lg transition transform duration-500 cursor-pointer rounded hover:scale-105 m-auto;
+}
+
+.jobCard__container {
+    @apply flex flex-col justify-start;
+}
+
+.jobCard__head {
+    @apply flex justify-between items-center w-full;
+}
+
+.jobCard__header__icon {
+    @apply bg-green-500 rounded-full uppercase text-white text-sm px-4 py-1 font-bold shadow-xl;
+}
+
+.jobCard__middle {
+    @apply text-sm text-gray-500 items-center;
+}
+
+.jobCard__head__items {
+    @apply text-lg font-semibold flex space-x-1 items-center mb-2;
+}
+
+.jobCard__bottom {
+    @apply mt-5;
+}
+
+.jobCard__bottom__button {
+    @apply hover:animate-bounce uppercase px-4 text-third border-third hover:bg-third hover:text-white border font-semibold rounded py-1  duration-100 cursor-pointer;
+}
+
+.jobCard__middle__paragraph {
+    @apply overflow-hidden;
+}
+
+.jobCard__middle__button--read {
+    @apply mt-4 py-2 text-text-text duration-200 hover:text-third underline;
+}
+
+.jobCard__paragraph--expand {
+    @apply flex flex-col transition-transform duration-500 ease-in-out py-4 whitespace-pre-line;
+}

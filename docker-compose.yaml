@@ -1,0 +1,31 @@
+version: "3.1"
+
+services:
+    production:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        image: ita-web-app-image-prod
+        container_name: ita-web-app-container-prod
+        ports:
+            - ${PORT}:80
+        environment:
+            NODE_ENV: production
+            API_URL: ${API_URL}
+            PORT: ${PORT}
+            BUCKET_S3: ${BUCKET_S3}
+        profiles: ["prod"]
+
+    development:
+        build:
+            context: .
+            dockerfile: ./Dockerfile.development
+        image: ita-web-app-image-dev
+        container_name: ita-web-app-container-dev
+        ports:
+            - ${PORT}:3000
+        environment:
+            NODE_ENV: development
+            API_URL: ${API_URL}
+            BUCKET_S3: ${BUCKET_S3}
+        profiles: ["dev"]
